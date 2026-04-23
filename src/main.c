@@ -8,6 +8,4 @@ int main(void)
     printf("Enter your first number: ");
 
     scanf("%f", &first);
-
-
 }
