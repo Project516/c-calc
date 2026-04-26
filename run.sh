@@ -1,5 +1,5 @@
 #!/bin/sh
 
 make clean
-make
+make || exit 1
 ./c-calc
