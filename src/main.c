@@ -3,7 +3,8 @@
 // simple calculator
 int main(void)
 {
-    float first, second, result;
+    float first, second;
+    float result = -1;
     char op;
     
     printf("This is a simple calculator written in c\n");
