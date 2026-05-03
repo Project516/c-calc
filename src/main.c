@@ -3,20 +3,20 @@
 // simple calculator
 int main(void)
 {
-    float first, second;
-    float result = -1;
+    double first, second;
+    double result = -1;
     char op;
     
     printf("This is a simple calculator written in c\n");
     
     printf("Enter your first number: ");
-    scanf("%f", &first);
+    scanf("%lf", &first);
 
     printf("Enter operator: ");
     scanf(" %c", &op);
 
     printf("Enter your second number: ");
-    scanf("%f", &second);
+    scanf("%lf", &second);
 
     switch(op)
     {
