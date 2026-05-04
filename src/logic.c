@@ -1,9 +1,10 @@
 #include "logic.h"
 #include "calc.h"
 
+// calculate logic
 double calculate(double first, char op, double second)
 {
-    double result;
+    double result = -1;
     switch(op)
     {
         // addition

@@ -1,5 +1,6 @@
 #include "input.h"
 
+// input number
 double input_number(char number_place[])
 {
     double result;
@@ -12,6 +13,7 @@ double input_number(char number_place[])
     return result;
 }
 
+// input operator
 double input_op()
 {
     char result;
