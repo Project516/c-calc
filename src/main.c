@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "calc.h"
 #include "input.h"
+#include "logic.h"
 
 // simple calculator
 int main(int argc, char *argv[])
@@ -25,38 +26,10 @@ int main(int argc, char *argv[])
     op = input_op();
 
     second = input_number("second");
+    
+    result = calculate(first, op, second);
 
-    switch(op)
-    {
-        // addition
-        case '+': 
-            result = add(first, second);
-            break;
-        // subtraction
-        case '-': 
-            result = subtract(first, second);
-            break;
-        // multiplication
-        case '*': 
-            result = multiply(first, second);
-            break;
-        // division
-        case '/': 
-            result = divide(first, second);
-            break;
-        // remainder 
-        case '%': 
-            int whole_first = first;
-            int whole_second = second;
-            result = whole_first % whole_second;
-            break;
-        // fall back
-        default:
-            printf("Unknown operator\n");
-            break;
-    }
-
-    printf("Result: %f\n", result);
+    printf("Result: %.4f\n", result);
 
     return 0;
 }
