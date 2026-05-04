@@ -1,34 +1,30 @@
+#include <stdlib.h>
 #include "calc.h"
+#include "input.h"
 
 // simple calculator
-int main(void)
+int main(int argc, char *argv[])
 {
     double first, second;
     double result = -1;
     char op;
+
+    /*
+    if (argc == 3)
+    {
+        first = atof(argv[1]);
+        op = atof(argv[2]);
+        second = atof(argv[3]);
+    }
+    */
     
     printf("This is a simple calculator written in c\n");
     
-    printf("Enter your first number: ");
-    if (scanf("%lf", &first) != 1) 
-    {
-        printf("Invalid input\n");
-        return 1;
-    }
+    first = input_number("first");
 
-    printf("Enter operator: ");
-    if (scanf(" %c", &op) != 1) 
-    {
-        printf("Invalid input\n");
-        return 1;
-    }
+    op = input_op();
 
-    printf("Enter your second number: ");
-    if (scanf("%lf", &second) != 1) 
-    {
-        printf("Invalid input\n");
-        return 1;
-    }
+    second = input_number("second");
 
     switch(op)
     {
