@@ -10,19 +10,22 @@ int main(void)
     printf("This is a simple calculator written in c\n");
     
     printf("Enter your first number: ");
-    if (scanf("%lf", &first) != 1) {
+    if (scanf("%lf", &first) != 1) 
+    {
         printf("Invalid input\n");
         return 1;
     }
 
     printf("Enter operator: ");
-    if (scanf(" %c", &op) != 1) {
+    if (scanf(" %c", &op) != 1) 
+    {
         printf("Invalid input\n");
         return 1;
     }
 
     printf("Enter your second number: ");
-    if (scanf("%lf", &second) != 1) {
+    if (scanf("%lf", &second) != 1) 
+    {
         printf("Invalid input\n");
         return 1;
     }
