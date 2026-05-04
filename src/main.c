@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "calc.h"
 
 // simple calculator
 int main(void)
@@ -10,37 +10,40 @@ int main(void)
     printf("This is a simple calculator written in c\n");
     
     printf("Enter your first number: ");
-    scanf("%lf", &first);
+    if (scanf("%lf", &first) != 1) {
+        printf("Invalid input\n");
+        return 1;
+    }
 
     printf("Enter operator: ");
-    scanf(" %c", &op);
+    if (scanf(" %c", &op) != 1) {
+        printf("Invalid input\n");
+        return 1;
+    }
 
     printf("Enter your second number: ");
-    scanf("%lf", &second);
+    if (scanf("%lf", &second) != 1) {
+        printf("Invalid input\n");
+        return 1;
+    }
 
     switch(op)
     {
         // addition
         case '+': 
-            result = first + second;
+            result = add(first, second);
             break;
         // subtraction
         case '-': 
-            result = first - second;
+            result = subtract(first, second);
             break;
         // multiplication
         case '*': 
-            result = first * second;
+            result = multiply(first, second);
             break;
         // division
         case '/': 
-            if (second == 0) 
-            // we dont want to divide by zero
-            {
-                printf("Divide by zero error\n");
-                break;
-            }
-            result = first / second;
+            result = divide(first, second);
             break;
         // remainder 
         case '%': 

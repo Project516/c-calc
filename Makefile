@@ -2,7 +2,7 @@ CC = gcc
 
 TARGET = c-calc
 
-SRC = src/main.c
+SRC = src/main.c src/calc.c
 
 CFLAGS = -Wall -Iinclude
 
