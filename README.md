@@ -4,11 +4,11 @@ This is a basic C calculator!
 
 It supports `+, -, *, /, %`.
 
-A makefile has been provided, for convinence.
+A makefile has been provided, for convenience.
 
 ## Usage
 
-Install GCC. On most linux distrubutions this can be installed from your package manager. Windows? Use MSYS2. Mac? I heard brew is good.
+Install GCC. On most Linux distributions this can be installed from your package manager. Windows? Use MSYS2. Mac? I heard brew is good.
 
 Run `./run.sh` to build and run the project.
 
