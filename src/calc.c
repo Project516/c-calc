@@ -21,9 +21,9 @@ double multiply (double a, double b)
 // division
 double divide (double a, double b)
 {
-    if (b == 0) 
+    if (b == 0)
     {
-        printf("Divide by 0 error");
+        printf("Divide by 0 error\n");
         return 0;
     }
     return a / b;

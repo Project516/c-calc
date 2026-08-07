@@ -23,11 +23,19 @@ double calculate(double first, char op, double second)
         case '/': 
             result = divide(first, second);
             break;
-        // remainder 
-        case '%': 
+        // remainder
+        case '%':
             int whole_first = first;
             int whole_second = second;
-            result = whole_first % whole_second;
+            if (whole_second == 0)
+            {
+                printf("Modulo by 0 error\n");
+                result = 0;
+            }
+            else
+            {
+                result = whole_first % whole_second;
+            }
             break;
         // fall back
         default:
