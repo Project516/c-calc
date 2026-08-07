@@ -15,3 +15,7 @@ Run `./run.sh` to build and run the project.
 ### Non interactive mode
 
 You can pass in arguments from the command line. For example `./c-calc 1 + 1` returns `Result: 2.0000`.
+
+### Tests
+
+Run the test suite with `make test`. See `tests/README.md` for details on what is covered.
