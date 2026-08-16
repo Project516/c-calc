@@ -9,10 +9,10 @@ CFLAGS = -Wall -Iinclude
 RELEASE = -O3 -s
 
 all:
-	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET) -lm
 
 clean:
 	rm -f $(TARGET)
 
 release:
-	$(CC) $(CFLAGS) $(RELEASE) $(SRC) -o $(TARGET)
+	$(CC) $(CFLAGS) $(RELEASE) $(SRC) -o $(TARGET) -lm

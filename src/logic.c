@@ -1,5 +1,6 @@
 #include "logic.h"
 #include "calc.h"
+#include <math.h>
 
 // calculate logic
 double calculate(double first, char op, double second)
@@ -23,11 +24,9 @@ double calculate(double first, char op, double second)
         case '/': 
             result = divide(first, second);
             break;
-        // remainder 
+        // remainder
         case '%': 
-            int whole_first = first;
-            int whole_second = second;
-            result = whole_first % whole_second;
+            result = fmod(first, second);
             break;
         // fall back
         default:
