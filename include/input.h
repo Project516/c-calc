@@ -4,6 +4,6 @@
 #include <stdio.h>
 
 double input_number(char number_place[]);
-double input_op();
+char input_op();
 
 #endif

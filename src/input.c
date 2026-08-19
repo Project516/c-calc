@@ -14,14 +14,14 @@ double input_number(char number_place[])
 }
 
 // input operator
-double input_op()
+char input_op()
 {
     char result;
     printf("Enter operator: ");
     if (scanf(" %c", &result) != 1) 
     {
         printf("Invalid input\n");
-        return 1;
+        return '\0';
     }
     return result;
 }
