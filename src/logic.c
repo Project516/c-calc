@@ -25,6 +25,11 @@ double calculate(double first, char op, double second)
             break;
         // remainder 
         case '%': 
+            if (second == 0) 
+            {
+                printf("Modulo by 0 error");
+                return 0;
+            }
             int whole_first = first;
             int whole_second = second;
             result = whole_first % whole_second;
